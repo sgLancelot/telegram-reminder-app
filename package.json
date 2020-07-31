@@ -3,13 +3,22 @@
   "version": "1.0.0",
   "description": "Lambda function to talk to Telegram bot",
   "license": "ISC",
-  "dependencies": {
-    "telegram-bot-api": "^2.0.0"
-  },
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "zhenkai.xyz"
+  "author": "zhenkai.xyz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgLancelot/telegram-reminder-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sgLancelot/telegram-reminder-app/issues"
+  },
+  "homepage": "https://github.com/sgLancelot/telegram-reminder-app#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "telegram-bot-api": "^2.0.0"
+  }
 }
