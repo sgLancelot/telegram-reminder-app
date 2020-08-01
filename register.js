@@ -37,13 +37,13 @@ exports.handler = () => {
                 bot.sendMessage({
                     chat_id: update.message.chat.id,
                     text: `Registration to Reminder App is unsuccessful. Please let Zhen Kai know of the error. ${JSON.stringify(err, null, 2)}`
-                })
+                }).catch(error => { console.log(error) })
             } else {
                 console.log('succeed')
                 bot.sendMessage({
                     chat_id: update.message.chat.id,
                     text: 'Registration to Reminder App is successful! The reminder will be sent on the first day of every month. Thanks!'
-                })
+                }).catch(error => { console.log(error) })
             }
         })
     })
