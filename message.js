@@ -27,7 +27,7 @@ exports.handler = () => {
                 console.log('Chat ID is:', chatIdObj.chat_id)
                 bot.sendMessage({
                     chat_id: chatIdObj.chat_id,
-                    text: 'Gentle reminder to transfer the monthly subscription fee the subscriber. Thanks!'
+                    text: 'Gentle reminder to transfer the monthly subscription fee to the subscriber. Thanks!'
                 }).catch(error => { console.log(error) })
             })
             

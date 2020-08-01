@@ -36,22 +36,15 @@ exports.handler = () => {
                 console.log('error cant read.', JSON.stringify(err, null, 2))
                 bot.sendMessage({
                     chat_id: update.message.chat.id,
-                    text: `Registration to Reminder App is unsuccessful. Please let Zhen Kai know of the error. ${JSON.stringify(err, null, 2)}`
+                    text: `Registration to Mr Gentle Reminderer is unsuccessful. Please let Zhen Kai know of the error. ${JSON.stringify(err, null, 2)}`
                 }).catch(error => { console.log(error) })
             } else {
                 console.log('succeed')
                 bot.sendMessage({
                     chat_id: update.message.chat.id,
-                    text: 'Registration to Reminder App is successful! The reminder will be sent on the first day of every month. Thanks!'
+                    text: 'Registration to Mr Gentle Reminderer is successful! The gentle reminder will be sent on the first day of every month. Thanks!'
                 }).catch(error => { console.log(error) })
             }
         })
     })
 }
-
-// todo:
-// document some things down on paper maybe?
-// add DDB integration by detecting /start only message
-// add reply after successful registration
-// cloudwatch event daily
-// new lambda function to get number of items
